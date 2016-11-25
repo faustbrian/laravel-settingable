@@ -30,6 +30,6 @@ trait Settingable
      */
     public function settings() : SettingStore
     {
-        return new SettingStore($this);
+        return new Store($this);
     }
 }
