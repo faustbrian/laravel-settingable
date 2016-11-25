@@ -1,10 +1,19 @@
 <?php
 
+/*
+ * This file is part of Laravel Settingable.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Settingable;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SettingStore
+class Store
 {
     /** @var \Illuminate\Database\Eloquent\Model */
     private $model;
