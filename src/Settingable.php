@@ -24,12 +24,10 @@ trait Settingable
     }
 
     /**
-     * [settings description].
-     *
-     * @return [type] [description]
+     * @return \BrianFaust\Settingable\Store|mixed
      */
-    public function settings() : SettingStore
+    public function settings($key = null) : SettingStore
     {
-        return new Store($this);
+        return $key ? $this->settings()->get($key) : new Store($this);
     }
 }
