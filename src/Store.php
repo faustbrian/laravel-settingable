@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Settingable;
 
 use Illuminate\Database\Eloquent\Model;
@@ -36,7 +38,7 @@ class Store
      *
      * @return Model
      */
-    public function get(string $key) : Model
+    public function get(string $key): Model
     {
         $query = $this->getSettingsCollection()->whereKey($key);
 
@@ -55,7 +57,7 @@ class Store
      *
      * @return bool
      */
-    public function set(string $key, $value) : bool
+    public function set(string $key, $value): bool
     {
         $data = [
             'key'        => $key,
@@ -77,7 +79,7 @@ class Store
      *
      * @return bool
      */
-    public function has(string $key) : bool
+    public function has(string $key): bool
     {
         $query = $this->getSettingsCollection()->whereKey($key);
 
@@ -95,7 +97,7 @@ class Store
      *
      * @return bool
      */
-    public function forget(string $key) : bool
+    public function forget(string $key): bool
     {
         $query = $this->getSettingsCollection()->whereKey($key);
 
@@ -127,7 +129,7 @@ class Store
      *
      * @return SettingStore
      */
-    public function collection(string $value) : SettingStore
+    public function collection(string $value): SettingStore
     {
         $this->collection = $value;
 
