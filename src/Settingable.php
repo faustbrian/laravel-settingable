@@ -37,7 +37,7 @@ trait Settingable
     /**
      * @return \BrianFaust\Settingable\Store|mixed
      */
-    public function settings($key = null): SettingStore
+    public function settings($key = null)
     {
         return $key ? $this->settings()->get($key) : new Store($this);
     }

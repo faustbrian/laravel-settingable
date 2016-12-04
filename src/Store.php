@@ -23,6 +23,8 @@ declare(strict_types=1);
 namespace BrianFaust\Settingable;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Collection;
 
 class Store
 {
@@ -122,7 +124,7 @@ class Store
      *
      * @return array
      */
-    public function all()
+    public function all(): Collection
     {
         $query = $this->model->settingsCollection();
 
@@ -136,9 +138,9 @@ class Store
     /**
      * @param string $value
      *
-     * @return SettingStore
+     * @return self
      */
-    public function collection(string $value): SettingStore
+    public function collection(string $value): self
     {
         $this->collection = $value;
 
@@ -148,7 +150,7 @@ class Store
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
-    private function getSettingsCollection()
+    private function getSettingsCollection(): MorphMany
     {
         return $this->model->settingsCollection();
     }

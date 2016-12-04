@@ -23,6 +23,7 @@ declare(strict_types=1);
 namespace BrianFaust\Settingable;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Setting extends Model
 {
@@ -43,7 +44,7 @@ class Setting extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function settingable()
+    public function settingable(): MorphTo
     {
         return $this->morphTo();
     }
