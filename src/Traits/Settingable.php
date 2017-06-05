@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Settingable.
  *
@@ -12,8 +9,9 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Settingable;
+namespace BrianFaust\Settingable\Traits;
 
+use BrianFaust\Settingable\Models\Setting;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait Settingable

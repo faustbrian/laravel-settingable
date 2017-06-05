@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Settingable.
  *
@@ -63,8 +60,8 @@ class Store
     public function set(string $key, $value): bool
     {
         $data = [
-            'key'        => $key,
-            'value'      => $value,
+            'key' => $key,
+            'value' => $value,
             'collection' => $this->collection,
         ];
 

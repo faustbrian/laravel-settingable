@@ -43,19 +43,11 @@ $user->settings()->collection('visuals')->has('key');
 $user->settings()->collection('visuals')->forget('key');
 ```
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
