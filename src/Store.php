@@ -60,8 +60,8 @@ class Store
     public function set(string $key, $value): bool
     {
         $data = [
-            'key' => $key,
-            'value' => $value,
+            'key'        => $key,
+            'value'      => $value,
             'collection' => $this->collection,
         ];
 
