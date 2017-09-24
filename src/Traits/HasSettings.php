@@ -16,7 +16,7 @@ namespace BrianFaust\Settingable\Traits;
 use BrianFaust\Settingable\Models\Setting;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
-trait Settingable
+trait HasSettings
 {
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany
