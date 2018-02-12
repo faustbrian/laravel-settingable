@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\Settingable;
 
-use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Collection;
 
 class Store
 {
