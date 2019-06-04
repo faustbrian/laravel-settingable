@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Settingable.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Settingable\Traits;
+namespace Artisanry\Settingable\Traits;
 
-use BrianFaust\Settingable\Models\Setting;
+use Artisanry\Settingable\Models\Setting;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasSettings
@@ -27,7 +27,7 @@ trait HasSettings
     }
 
     /**
-     * @return \BrianFaust\Settingable\Store|mixed
+     * @return \Artisanry\Settingable\Store|mixed
      */
     public function settings($key = null)
     {

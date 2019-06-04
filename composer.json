@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-settingable",
+    "name": "artisanry/settingable",
     "description": "An easy-to-use way of handling settings for Eloquent models",
-    "keywords": ["laravel", "framework", "Laravel-Settingable", "Laravel Settingable", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Settingable", "Laravel Settingable"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Settingable\\": "src/"
+            "Artisanry\\Settingable\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Settingable\\": "tests"
+            "Artisanry\\Tests\\Settingable\\": "tests"
         }
     },
     "config": {
@@ -37,7 +37,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Settingable\\SettingableServiceProvider"
+                "Artisanry\\Settingable\\SettingableServiceProvider"
             ]
         }
     },
