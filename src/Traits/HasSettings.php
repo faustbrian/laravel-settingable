@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Artisanry\Settingable\Traits;
 
 use Artisanry\Settingable\Models\Setting;
+use Artisanry\Settingable\Store;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasSettings
